@@ -6,7 +6,7 @@ import ThumbnailGenerator from '@uppy/thumbnail-generator'
 import findAllDOMElements from '@uppy/utils/lib/findAllDOMElements'
 import toArray from '@uppy/utils/lib/toArray'
 import getDroppedFiles from '@uppy/utils/lib/getDroppedFiles'
-import { nanoid } from 'nanoid/non-secure'
+// import { nanoid } from 'nanoid/non-secure'
 import memoizeOne from 'memoize-one'
 import FOCUSABLE_ELEMENTS from '@uppy/utils/lib/FOCUSABLE_ELEMENTS.js'
 import * as trapFocus from './utils/trapFocus.js'
@@ -49,7 +49,7 @@ export default class Dashboard extends UIPlugin {
     this.id = this.opts.id || 'Dashboard'
     this.title = 'Dashboard'
     this.type = 'orchestrator'
-    this.modalName = `uppy-Dashboard-${nanoid()}`
+    this.modalName = `uppy-Dashboard`
 
     this.defaultLocale = locale
 
